@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-1.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css"/>
+  <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT" />
+  <title>イントラネット</title>
+  <meta name="description" content="Sample"/>
+  <meta name="keywords" content="Sample,Applicaiton"/> 
+  <meta name="author" content="Tomochika Hara"/>
+  <base href="../" th:href="@{/}"/>
+  <script type="text/javascript" charset="UTF-8" src="common/scripts/requireplugins-jquery-1.4.4.js"></script>
+  <!-- 
+  <script type="text/javascript" charset="UTF-8" src="../../common/scripts/requireplugins-jquery-1.4.4.js" th:src="@{/common/scripts/requireplugins-jquery-1.4.4.js}"></script>
+   -->
+</head>
+<body>
+  <div id="menu" th:include="intranet/header.html :: header">
+  </div>
+  <div id="contents">
+    Hello, 
+    <span th:text="${name}">Tom</span>!!
+  </div>
+</body>
+</html>
